@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+<style>
+    .w3-tangerine {
+        font-family: "Tangerine", serif;
+    }
+	.w3-amatic {
+		font-family: 'Amatic SC', cursive;
+	}
+</style>
+<title>4000 Footers</title>
+<body class="w3-content w3-dark-gray" style="max-width:1150px">
+    <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-top w3-green w3-mobile" id="mySidebar" style="width:200px">
+        <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+        <a href="index.html" class="w3-button w3-block w3-left-align w3-hover-deep-orange"><i class="fa fa-home"></i> Home</a>
+        <A href="nh48.html" class="w3-button w3-block w3-left-align w3-hover-deep-orange">NH 48 4K Footer</A>
+		<a href="firetowers.html" class="w3-button w3-block w3-left-align w3-hover-deep-orange">NH Firetowers</a>
+        <button class="w3-button w3-block w3-left-align w3-hover-deep-orange" onclick="accordianFunc()">Waterfalls <i class="fa fa-caret-down"></i></button>
+        <div id="nav_waterfalls" class="w3-hide w3-white w3-bar w3-animate-opacity">
+            <a id="nav_franconia" href="waterfalls.html?show_card=1" class="w3-bar-item w3-button w3-hover-pale-red" onclick="show_card('card_FrancFalls');w3_close();return false;">Franconia Falls</a>
+            <a id="nav_arethusa" href="waterfalls.html?show_card=2" class="w3-bar-item w3-button w3-hover-pale-yellow" onclick="show_card('card_Arethusa');w3_close();return false;">Arethusa Falls</a>
+            <a id="nav_flume" href="waterfalls.html?show_card=3" class="w3-bar-item w3-button w3-hover-pale-blue" onclick="show_card('card_Flume');w3_close();return false;">The Flume</a>
+        </div>
+        <a href="skiing.html" class="w3-button w3-block w3-left-align w3-hover-deep-orange">Skiing in NH</a>
+        <a href="watersports.html" class="w3-button w3-block w3-left-align w3-hover-deep-orange">Lots of Water in NH</a>
+    </div>
+    <div class="w3-main w3-white" style="margin-left:200px">
+        <div class="w3-bar w3-container w3-light-green">
+            <button class="w3-button w3-xxxlarge w3-hide-large w3-bar-item" onclick="w3_open()">&#9776;</button>
+            <h1 class="w3-amatic w3-xxxlarge w3-bar-item">The New Hampshire 4000 Footers</h1>
+        </div>
+        <div class="w3-container w3-text-deep-orange" style="background-image: url('imgs/fr.jpg');">
+            <div class="w3-panel w3-round-xxlarge w3-teal w3-opacity">
+                <p><b>New Hampshire is home to some of the tallest mountains in the Appalacian range and 48 of their peaks rise over 4000 feet tall.
+                    These mountains are part of the "New Hampshire 48-4000 Footers List." This list is composed of all the mountains that meet the 
+                    qualifications of rising above sea level beyond 4000 feet. Many New England locals attempt to climb all 48 mountains on the list. 
+                    It is a prestigious hiking goal, started by many and accomplished by few.</b></p>
+            </div>
+            <div class="w3-container">
+                <div class="w3-display-container w3-text-white">
+                    <img src="imgs/mtwashington.jpeg" alt="Mt. Washington">
+                    <div class="w3-display-bottomleft w3-container">
+                        <p class="w3-xlarge">Mount Washington</p>
+                    </div>
+                </div>
+                <div class="w3-panel w3-round-xxlarge w3-teal w3-opacity">
+                    <p> The top 5 tallest mountains in New Hampshire are: Mt. Washington, Mt. Adams, Mt. Jefferson, Mt. Monroe, and Mt. Madison. </p>
+                </div>
+            </div>
+        </div>
+    <h3 class="w3-container"> The best way to approach this list, is to start from some of the easier mountains and build your strength up for the taller ones. This is the recommended start order based on difficulty level: </h3>
+    <div class="w3-row-padding w3-container">
+        <div class="w3-half">
+            <div class="w3-card">
+                <img class="w3-bordered w3-image" src="imgs/osceola.jpg" alt="Osceola" style="width:100%">
+                <p class="w3-container">Mount Osceola: It has the least amount of elevation gain and it's all spread over 3 miles. This makes for an easy hike, and it has great views. Trailhead information can be found <a href="http://4000footers.com/osceola.shtml">here</a></p>
+            </div>
+        </div>
+        <div class="w3-half">
+            <div class="w3-card">
+                <img class="w3-bordered w3-image" src="imgs/tecumseh.jpg" alt="Tecumseh" style="width:100%">
+                <p class="w3-container">Mount Tecumseh: This mountain has a small elevation gain, but it is a shorter hike so it can be a bit steeper. The views at the top are also very impressive as they look out over waterville valley. Trailhead information can be found <a href="http://4000footers.com/tecumseh.shtml">here</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-container">
+        <div class="w3-half">
+            <div class="w3-card">
+                <img class="w3-bordered w3-image" src="imgs/mt_hale.jpg" alt="Mt Hale" style="width:100%">
+                <p class="w3-container">Mount Hale: This is a shorter but steeper hike. The view from the summit is not visible due to the trees, but many views are available while hiking that make the trip worth it. Trailhead information can be found <a href="http://4000footers.com/hale.shtml">here</a></p>
+            </div>
+        </div>
+        <div class="w3-half">
+            <div class="w3-card">
+                <img class="w3-bordered w3-image" src="imgs/bigrock.jpg" alt="Mt Jackson" style="width:100%">
+                <p class="w3-container">Mount Jackson: This is a shorter hike to the summit and it has amazing views. It has a few steep sections, but is generally considered a very easy hike. Trailhead information can be found <a href="http://4000footers.com/jackson.shtml">here</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-container">
+        <div class="w3-half">
+            <div class="w3-card">
+                <img class="w3-bordered w3-image" src="imgs/southern_pres_ridge.jpg" alt="Mt Pierce" style="width:100%">
+                <p class="w3-container">Mount Pierce: Another trail that is gradually graded and easy to hike. The views from the top overlooking Crawford Notch are spectacular. Trailhead information can be found <a href="http://4000footers.com/pierce.shtml">here</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+        function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+        }
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+        }
+        function show_card(card_id) {
+            document.getElementById("card_FrancFalls").style.display = "none";
+            document.getElementById("card_Arethusa").style.display = "none";
+            document.getElementById("card_Flume").style.display = "none";
+            document.getElementById(card_id).style.display = "block";
+        }
+        function accordianFunc() {
+            var x = document.getElementById("nav_waterfalls");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-orange";
+            } else { 
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className = 
+                x.previousElementSibling.className.replace(" w3-orange", "");
+            }
+        }
+    </script>
+</body>
+
+</html>

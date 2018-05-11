@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Firetowers of NH</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+<style>
+    .w3-tangerine {
+        font-family: "Tangerine", serif;
+    }
+	.w3-amatic {
+		font-family: 'Amatic SC', cursive;
+	}
+</style>
+
+<body class="w3-content w3-dark-gray" style="max-width:1150px">
+    <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-top w3-green w3-mobile" id="mySidebar" style="width:200px">
+        <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+        <a href="index.html" class="w3-button w3-block w3-left-align w3-hover-deep-orange"><i class="fa fa-home"></i> Home</a>
+        <A href="nh48.html" class="w3-button w3-block w3-left-align w3-hover-deep-orange">NH 48 4K Footer</A>
+		<a href="firetowers.html" class="w3-button w3-block w3-left-align w3-hover-deep-orange">NH Firetowers</a>
+        <button class="w3-button w3-block w3-left-align w3-hover-deep-orange" onclick="accordianFunc()">Waterfalls <i class="fa fa-caret-down"></i></button>
+        <div id="nav_waterfalls" class="w3-hide w3-white w3-bar w3-animate-opacity">
+            <a id="nav_franconia" href="waterfalls.html?show_card=1" class="w3-bar-item w3-button w3-hover-pale-red" onclick="show_card('card_FrancFalls');w3_close();return false;">Franconia Falls</a>
+            <a id="nav_arethusa" href="waterfalls.html?show_card=2" class="w3-bar-item w3-button w3-hover-pale-yellow" onclick="show_card('card_Arethusa');w3_close();return false;">Arethusa Falls</a>
+            <a id="nav_flume" href="waterfalls.html?show_card=3" class="w3-bar-item w3-button w3-hover-pale-blue" onclick="show_card('card_Flume');w3_close();return false;">The Flume</a>
+        </div>
+        <a href="skiing.html" class="w3-button w3-block w3-left-align w3-hover-deep-orange">Skiing in NH</a>
+        <a href="watersports.html" class="w3-button w3-block w3-left-align w3-hover-deep-orange">Lots of Water in NH</a>
+    </div>
+    <div class="w3-main w3-light-gray" style="margin-left:200px">
+        <div class="w3-bar w3-teal">
+            <button class="w3-button w3-xxxlarge w3-hide-large w3-bar-item" onclick="w3_open()">&#9776;</button>
+            <h1 class="w3-amatic w3-xxxlarge w3-bar-item">Fire Towers of New Hampshire</h1>
+        </div>
+        <div class="w3-row-padding w3-border">
+            <div class="w3-third">
+                <div class="w3-container">
+                    <p class="w3-text-teal w3-large">
+                        Part of the history of New Hampshire is the vast network of firetowers that are placed accross the state. 
+                        While many of them have either fallen down, or otherwise destroyed, many are still in active service.
+                        Just like the AMC 4000 Footers club there is a Merit badge or sorts that can be earned by visiting all of the 
+                        Fire towers in the state. Some additional information can be found here at this website
+                    <a href="http://www.48x12.com/nh-fire-towers-objective-rules.shtml">48x12.com</a></p>
+                </div>
+            </div>
+            <div class="w3-twothird">
+                <div class="w3-container w3-center">
+                    <img src="imgs/pawtuckaway_tower.jpeg" alt="NH Firetowers" style="width:100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+        }
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+        }
+        function accordianFunc() {
+            var x = document.getElementById("nav_waterfalls");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-orange";
+            } else { 
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className = 
+                x.previousElementSibling.className.replace(" w3-orange", "");
+            }
+        }
+    </script>
+</BODY>
+
+</HTML>
